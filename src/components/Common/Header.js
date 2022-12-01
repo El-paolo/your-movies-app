@@ -3,26 +3,31 @@ import "../../assets/styles/components/Header.scss";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import CustomLink from "../../customHooks/CustomLink";
+const Header = () => {
+  
 
-
-const Header = () => (
-  <nav>
-    <Navbar bg="light" expand="lg">
+  return(
+  <nav >
+    <Navbar className="nav-bar" expand="lg" variant="dark">
       <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar.Brand href="/" > <h1>Movies DB</h1> </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="/">WatchList</Nav.Link>
-            <Nav.Link href="/seen">Seen</Nav.Link>
-            <Nav.Link href="/favorites">Favorites</Nav.Link>
+        <Navbar.Collapse id="basic-navbar-nav" className="nav-container" >
+          <Nav className="me-auto  ">
+            
+            <CustomLink to="/" label="Home">Home</CustomLink>
+            <CustomLink to="/watchlist">WatchList</CustomLink>
+            <CustomLink to="/seen">Seen</CustomLink>
+            <CustomLink to="/favorites">Favorites</CustomLink>
+          
           
           </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
   </nav>
-);
+  )
+};
 
 export default Header;

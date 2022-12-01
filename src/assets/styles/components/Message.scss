@@ -1,0 +1,9 @@
+@import '../App.scss';
+
+.message{
+    color: $secondary-color;
+    font-weight: bold;
+    font-size: larger;
+    margin: 4rem auto;
+    text-align: center;
+}

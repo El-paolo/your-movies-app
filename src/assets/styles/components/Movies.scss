@@ -1,0 +1,8 @@
+.movies-container{
+    display: grid;
+    gap: 3rem 6.5rem;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    justify-items: center;
+    
+}

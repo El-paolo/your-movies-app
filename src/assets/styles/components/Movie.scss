@@ -1,0 +1,13 @@
+@import '../App.scss';
+.movie-container{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 1rem;
+    width: 20rem;
+
+
+}
+
+.movie-container:hover{
+    box-shadow: $light-color 0px 5px 15px;
+}
+

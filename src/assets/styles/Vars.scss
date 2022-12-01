@@ -1,13 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald|Source+Sans+Pro&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
 
 //Fonts
-$title-font: 'Oswald', sans-serif;
-$text-font: 'Source Sans Pro', sans-serif;
+$title-font:'Silkscreen', cursive;
 
 //Colors
-$primary-color: #65fafb;
-$secondary-color: #62c241;
-$success-color: #faf76a;
+$primary-color: #ffffff;
+$secondary-color: #000c52;
 $dark-color: #000000;
-$light-color: #ffffff;
-$danger-color: #fc859e;
+$light-color:#00ffdd;
+$success-color: #00c01a;
+$danger-color: #ff2b59;

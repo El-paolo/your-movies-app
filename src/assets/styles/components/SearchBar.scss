@@ -1,0 +1,48 @@
+@import '../App.scss';
+
+.search-bar-container{
+    margin: 2rem auto ;
+    height: 3rem;
+    width: 45%;
+    position: relative;
+
+}
+.search-bar{
+    color: $dark-color;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 0.8rem;
+    border-color: $dark-color;
+    outline: none;
+}
+
+.search-bar:focus{
+    
+    @extend .search-bar;
+    border-color:$light-color;
+    box-shadow: 0.5rem;
+}
+
+.search-button{
+    width: 10%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    background-color: $secondary-color;
+    color: $primary-color;
+    outline: none;
+    border-radius: 0.4rem;
+    z-index: 1;
+    border: 0;
+}
+
+.search-button i{
+    margin: auto 0;
+
+}
+
+
+
+
